@@ -13,15 +13,15 @@ import java.lang.reflect.Type;
 public abstract class AbsViewModel<D extends AbsLiveData, T> extends ViewModel {
 
 
-    interface OnViewModelClearedCallback<D> {
-        void onCleared(AbsLiveData<D> data);
+    interface OnViewModelClearedCallback<T> {
+        void onCleared(AbsLiveData<T> data);
     }
 
     protected D d;
 
-    private OnViewModelClearedCallback<D> mOnViewModelClearedCallback;
+    private OnViewModelClearedCallback<T> mOnViewModelClearedCallback;
 
-    protected void setOnClearedCallback(OnViewModelClearedCallback<D> callback) {
+    protected void setOnClearedCallback(OnViewModelClearedCallback<T> callback) {
         this.mOnViewModelClearedCallback = callback;
     }
 

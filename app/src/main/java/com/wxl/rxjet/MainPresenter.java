@@ -5,6 +5,7 @@ import android.widget.TextView;
 import androidx.lifecycle.Observer;
 
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
+import com.trello.rxlifecycle2.components.support.RxFragment;
 import com.wxl.gainjet.AbsPresenter;
 import com.wxl.gainjet.ViewModelFactory;
 
@@ -28,6 +29,8 @@ public class MainPresenter extends AbsPresenter {
             }
         });
     }
+
+
 
     public void setTextView(TextView mTextView) {
         this.mTextView = mTextView;

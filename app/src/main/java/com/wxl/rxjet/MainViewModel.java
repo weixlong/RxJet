@@ -10,8 +10,4 @@ import com.wxl.gainjet.AbsViewModel;
  */
 public class MainViewModel extends AbsViewModel<MainData,String> {
 
-    @Override
-    protected MainData newInstanceData() {
-        return super.newInstanceData();
-    }
 }
